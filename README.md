@@ -1,1 +1,4 @@
-# edgenuity-restyle
+# Edgenuity Scripts
+
+- Restyle
+- Remove "Tutor" button
