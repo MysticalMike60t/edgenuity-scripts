@@ -1,0 +1,221 @@
+:root {
+  --background-color: #333;
+  --background-color-secondary: rgb(35,35,35);
+  --primary-color: #dc4e12;
+  --success-color: #5cb85c;
+  --info-color: #40a7db;
+  --border-color: rgb(65,65,65);
+  --border-color-lighter: rgb(85,85,85);
+  --text-color: white;
+  --text-color-alternate: black;
+
+  --done-button-icon: url("https://images.vexels.com/media/users/3/157890/isolated/preview/4f2c005416b7f48b3d6d09c5c6763d87-check-mark-circle-icon.png");
+}
+* {
+  text-shadow: none !important;
+}
+body {
+  background: var(--background-color) !important;
+}
+/* Title bar styles (force with !important) */
+.title-bar {
+  background: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+.title-bar, .title-bar * { color: var(--text-color) !important; }
+
+/* Hide known Tutor controls (best-effort) */
+.tutor, .tutor-button, .btn-tutor, [aria-label*="Tutor"], [title*="Tutor"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Marker for elements hidden by this script */
+[data-restyle-hidden="true"] { display: none !important; visibility: hidden !important; }
+
+#btnEntryAudio, #btnExitAudio {
+  background: var(--background-color) !important;
+  color: var(--text-color) !important;
+  border: none !important;
+  outline: 1px solid var(--info-color) !important;
+  border-radius: 0 !important;
+}
+#btnEntryAudio:hover, #btnExitAudio:hover {
+  background: var(--background-color) !important;
+}
+#btnEntryAudio .icon-qb-audio1, #btnExitAudio .icon-qb-audio1 {
+  display: none;
+}
+#btnEntryAudio *, #btnExitAudio * {
+  text-shadow: none !important;
+}
+#btnCheck {
+  background: var(--background-color) !important;
+  color: var(--text-color) !important;
+  border: none !important;
+  outline: 1px solid var(--success-color) !important;
+  border-radius: 0 !important;
+}
+#btnCheck .icon-qb-check1 {
+  display: none !important;
+}
+#btnCheck::after {
+  --size: 20px;
+
+  content: "";
+  width: var(--size);
+  height: var(--size);
+  background-image: var(--done-button-icon);
+  background-position: center;
+  background-size: contain;
+  left: 4px;
+  top: 4px;
+  position: absolute;
+}
+#frameAudioControls, .question-container, .content, #frameArea, .bottom-tray, .mainfoot, .activityActive, .Toolbar {
+  background: var(--background-color) !important;
+}
+.ui-tabs-tab {
+  background: var(--background-color) !important;
+  border: none !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+.ui-tabs-tab::before {
+  display: none !important;
+}
+.ui-tabs-tab::after {
+  display: none !important;
+}
+.ui-tabs-tab *, .footnav *, .Practice_Question_Body * {
+  color: var(--text-color) !important;
+  text-shadow: none !important;
+}
+.nav-icon, .FrameLeft a, .FrameRight a {
+  border: 1px solid var(--primary-color) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.nav-icon.disabled {
+  border: 1px solid var(--border-color) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.footnav .nav-icon {
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+}
+.mainfoot {
+  box-shadow: none !important;
+  border-top: 1px solid var(--border-color) !important;
+}
+.FramesList li:not('.FrameCurrent','.FrameComplete','.FrameLeft','.FrameRight') a {
+  background-image: none !important;
+  background-color: var(--background-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+.FrameCurrent a {
+  background-image: none !important;
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+}
+.FrameComplete a {
+  background-image: none !important;
+  background-color: var(--background-color) !important;
+  border: 1px solid var(--primary-color) !important;
+}
+.vcplayer {
+  -webkit-box-shadow: none !important;
+}
+.vcplayer .controls {
+  border: 1px solid var(--background-color) !important;
+  background-image: none !important;
+  background-color: var(--background-color) !important;
+  outline: 1px solid var(--background-color) !important;
+}
+.vcplayer .controls li {
+  border: none !important;
+}
+#uid1_played {
+  background: var(--primary-color) !important;
+}
+.ui-tabs-nav {
+  background: var(--background-color-secondary) !important;
+  border: none !important;
+}
+.mainhead {
+  background: var(--background-color) !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+.mainhead * {
+  border: none !important;
+}
+.toolbar {
+  border: 1px solid var(--border-color) !important;
+}
+.toolbar li {
+  border: none !important;
+}
+.overlay-attempt {
+  box-shadow: none !important;
+}
+.overlay-attempt-primary-section *, .overlay-attempt-header {
+  border: none !important;
+}
+.lesson-pane-trigger {
+  border-radius: 0 !important;
+  border: 1px solid var(--border-color) !important;
+  border-right: none !important;
+  background: var(--background-color) !important;
+  box-shadow: none !important;
+}
+#home_video_container {
+  outline: 1px solid var(--border-color) !important;
+}
+.gradebar {
+  background: var(--success-color) !important;
+  border: 1px solid var(--success-color) !important;
+}
+.goRight, .goLeft {
+  border: none !important;
+  outline: none !important;
+}
+.ui-tabs-active {
+  background: var(--border-color) !important;
+  border-radius: 0 !important;
+}
+.content * {
+  color: var(--text-color) !important;
+}
+.head-nav .parent {
+  border: none !important;
+  outline: none !important;
+}
+.JQueryTabbify {
+  background: var(--background-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+.ui-state-default {
+  outline: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: var(--background-color-secondary) !important;
+}
+.ui-state-active {
+  background: var(--background-color) !important;
+}
+.reading.pane-blue * {
+  color: black !important;
+}
+.Practice_Question_Body select {
+  background: var(--background-color) !important;
+  border: none !important;
+  outline: 1px solid var(--border-color-lighter) !important;
+  margin: 2px;
+}
+.Practice_Question_Body select * {
+  color: var(--text-color) !important;
+}
