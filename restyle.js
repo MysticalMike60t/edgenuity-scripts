@@ -296,10 +296,21 @@ input {
   outline: 1px solid var(--success-color) !important;
   border-radius: 0 !important;
 }
-.av-container .nav-bar {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  padding-top: 20px !important;
+.av-container .nav-bar, .av-container .nav-bar-review {
+  --padding: 5px;
+
+  padding-left: calc(var(--padding)*2) !important;
+  padding-right: calc(var(--padding)*2) !important;
+  padding-top: calc(var(--padding)/2) !important;
+}
+p, .bottom-tray div, .icon-success5 {
+  color: var(--text-color) !important;
+}
+.Assessment_Main_Body_Content_Question .Practice_Question_Body:has(.answer-choice .answer-choice-label img) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
 }
 `.trim();
 
