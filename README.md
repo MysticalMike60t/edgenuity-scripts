@@ -3,6 +3,8 @@
 - Restyle
 - Remove "Tutor" button
 
+These scripts remove, style, and add functionality to Edgenuity's UI. __NONE__ of these are cheats or malicious.
+
 ## Installation
 
 1. Add [Tampermonkey](https://www.tampermonkey.net/) extension to your browser.
